@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Online Course Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2>OCMS</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- LOGIN FORM SECTION -->
+<div class="container">
+    <form onsubmit="return login()">
+        <h2>Student Login</h2>
+        <p>
+            Please enter your registered email and password to access your courses, track
+            progress, and continue learning.
+        </p>
+
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        
+        <button type="submit" class="btn">Login</button>
+        
+        <p style="text-align:center; margin-top: 15px;">
+            Don't have an account? <a href="register.html" style="color: var(--secondary); text-decoration: none;">Register here</a>
+        </p>
+
+        <p style="text-align:center; margin-top: 10px; font-size: 14px; color: #555;">
+            Your login information is secure and confidential. We value your privacy.
+        </p>
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Online Course Management System. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

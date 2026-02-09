@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Online Course Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2>OCMS</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- REGISTRATION FORM SECTION -->
+<div class="container">
+    <form onsubmit="return register()">
+        <h2>Create a New Account</h2>
+        <p>
+            Join OCMS today to access high-quality courses, interactive lessons, and
+            track your progress efficiently. Registration is free, secure, and quick.
+        </p>
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="password" id="password" placeholder="Password (min 6 characters)" required>
+
+        <button type="submit" class="btn">Register</button>
+
+        <p style="text-align:center; margin-top: 15px;">
+            Already have an account? <a href="login.html" style="color: var(--secondary); text-decoration: none;">Login here</a>
+        </p>
+
+        <p style="text-align:center; margin-top: 10px; font-size: 14px; color: #555;">
+            Your personal information is secure and will never be shared with third parties.
+        </p>
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Online Course Management System. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/* ===================== GLOBAL RESET ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===================== COLORS ===================== */
+:root {
+    --primary: #1E3A8A;     /* Deep Blue - Trust & Knowledge */
+    --secondary: #3B82F6;   /* Sky Blue - Highlights & Buttons */
+    --accent: #22C55E;      /* Green - Progress/Success */
+    --light: #F9FAFB;       /* Background */
+    --dark: #111827;        /* Text */
+}
+
+/* ===================== BODY ===================== */
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+/* ===================== NAVBAR ===================== */
+nav {
+    background-color: var(--primary);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    color: white;
+    font-size: 26px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent);
+}
+
+/* ===================== HERO ===================== */
+.hero {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===================== BUTTON ===================== */
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #16a34a;
+}
+
+/* ===================== FORM ===================== */
+form {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--secondary);
+}
+
+/* ===================== COURSES GRID ===================== */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.course-card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+}
+
+.course-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+/* ===================== DASHBOARD ===================== */
+.dashboard-box {
+    background: white;
+    padding: 28px;
+    margin: 25px 0;
+    border-left: 6px solid var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.dashboard-box h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 12px;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    form {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
