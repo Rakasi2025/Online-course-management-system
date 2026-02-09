@@ -1,0 +1,36 @@
+# Online Course Management System (OCMS)
+
+## Description
+The Online Course Management System (OCMS) is a web-based platform that allows students and instructors to interact digitally. Students can register, login, enroll in courses, track their progress, and contact administrators. Instructors can manage courses and monitor student performance. The system is designed to be **responsive, interactive, and user-friendly**, making online learning easy and efficient.
+
+---
+
+## Features
+- **Home Page:** Overview of the platform, key features, and call-to-action.
+- **Login Page:** Secure login for registered users with input validation.
+- **Register Page:** Allows new users to create accounts securely.
+- **Courses Page:** Lists all courses with descriptions and interactive enroll buttons.
+- **Dashboard Page:** Displays enrolled courses and progress tracking for students.
+- **Contact Page:** Users can send messages or inquiries to administrators.
+- **Responsive Design:** Works on desktops, tablets, and mobile devices.
+
+---
+
+## Technologies Used
+- **HTML:** Structure and layout of web pages.
+- **CSS:** Styling, layout, and responsive design.
+- **JavaScript:** Interactivity, form validation, course enrollment, and progress tracking.
+
+---
+
+## Installation / How to Run
+1. Download or clone the project folder to your computer.
+2. Open the folder `online-course-system`.
+3. Open **any HTML file** (e.g., `index.html`) in a browser:
+   - Right-click → Open with → Browser (Chrome, Edge, Firefox, etc.)
+4. Navigate through the pages using the links in the navigation bar.
+5. Forms such as **Login, Register, and Contact** are interactive via `script.js`.
+
+---
+
+## Folder Structure
