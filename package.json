@@ -1,0 +1,27 @@
+{
+  "name": "online-course-management-system",
+  "version": "1.0.0",
+  "description": "The Online Course Management System (OCMS) is a web-based platform that allows students and instructors to interact digitally. Students can register, login, enroll in courses, track their progress, and contact administrators. Instructors can manage courses and monitor student performance. The system is designed to be **responsive, interactive, and user-friendly**, making online learning easy and efficient.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakasi2025/Online-course-management-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rakasi2025/Online-course-management-system/issues"
+  },
+  "homepage": "https://github.com/Rakasi2025/Online-course-management-system#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.18.2"
+  }
+}
