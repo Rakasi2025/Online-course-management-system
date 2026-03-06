@@ -10,18 +10,18 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve frontend files
+// Serve frontend files from public folder
 app.use(express.static("public"));
 
 // MySQL Connection
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "barbie2002", 
+  password: "barbie2002",
   database: "ocms"
 });
 
-// Connect DB
+// Connect to DB
 db.connect((err) => {
   if (err) {
     console.error("❌ MySQL Error:", err.message);
@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
   res.send("OCMS Backend is Working 🚀");
 });
 
-// Register route
+// REGISTER ROUTE
 app.post("/register", (req, res) => {
   const { name, email, password } = req.body;
 
@@ -43,20 +43,19 @@ app.post("/register", (req, res) => {
     return res.send("All fields are required");
   }
 
-  const sql =
-    "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
+  const sql = "INSERT INTO users (name, email, password) VALUES (?, ?, ?)";
 
   db.query(sql, [name, email, password], (err) => {
     if (err) {
       console.error(err);
-      return res.send("Registration failed");
+      return res.send("Registration failed ❌");
     }
 
     res.send("Registered successfully ✅");
   });
 });
 
-// Courses route
+// COURSES ROUTE
 app.get("/courses", (req, res) => {
   db.query("SELECT * FROM courses", (err, data) => {
     if (err) return res.send(err);
@@ -65,7 +64,8 @@ app.get("/courses", (req, res) => {
   });
 });
 
-// Start server
+// START SERVER
 app.listen(3000, () => {
   console.log("🚀 Server running at http://localhost:3000");
 });
+
