@@ -55,6 +55,22 @@ app.post("/register", (req, res) => {
   });
 });
 
+
+// 👇 NEW ROUTE TO SEE REGISTERED USERS
+app.get("/users", (req, res) => {
+  const sql = "SELECT * FROM users";
+
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error(err);
+      return res.send("Error fetching users");
+    }
+
+    res.json(results);
+  });
+});
+
+
 // COURSES ROUTE
 app.get("/courses", (req, res) => {
   db.query("SELECT * FROM courses", (err, data) => {
@@ -68,4 +84,5 @@ app.get("/courses", (req, res) => {
 app.listen(3000, () => {
   console.log("🚀 Server running at http://localhost:3000");
 });
+
 
